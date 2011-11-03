@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/boisik
+# catalog-date 2009-08-23 18:29:20 +0200
+# catalog-license gpl2
+# catalog-version 0.5
 Name:		texlive-boisik
 Version:	0.5
 Release:	1
@@ -163,6 +169,7 @@ and OM* encodings.
 %doc %{_texmfdistdir}/doc/fonts/boisik/example/table.tex
 %doc %{_texmfdistdir}/doc/fonts/boisik/example/testfont.pdf
 %doc %{_texmfdistdir}/doc/fonts/boisik/example/testfont.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -173,3 +180,5 @@ and OM* encodings.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
