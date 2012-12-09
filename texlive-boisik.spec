@@ -170,3 +170,18 @@ and OM* encodings.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.5-2
++ Revision: 749795
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.5-1
++ Revision: 717959
+- texlive-boisik
+- texlive-boisik
+- texlive-boisik
+- texlive-boisik
+- texlive-boisik
+
