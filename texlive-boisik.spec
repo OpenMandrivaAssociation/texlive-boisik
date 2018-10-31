@@ -6,7 +6,7 @@
 # catalog-version 0.5
 Name:		texlive-boisik
 Version:	0.5
-Release:	10
+Release:	11
 Summary:	A font inspired by Baskerville design
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/boisik
