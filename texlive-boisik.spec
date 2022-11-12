@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /fonts/boisik
-# catalog-date 2009-08-23 18:29:20 +0200
-# catalog-license gpl2
-# catalog-version 0.5
 Name:		texlive-boisik
-Version:	0.5
-Release:	11
+Version:	15878
+Release:	1
 Summary:	A font inspired by Baskerville design
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/boisik
 License:	GPL2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boisik.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boisik.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boisik.r15878.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boisik.doc.r15878.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ and maths fonts. LaTeX support is offered for use with OT1, IL2
 and OM* encodings.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -163,25 +157,10 @@ and OM* encodings.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.5-2
-+ Revision: 749795
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.5-1
-+ Revision: 717959
-- texlive-boisik
-- texlive-boisik
-- texlive-boisik
-- texlive-boisik
-- texlive-boisik
-
