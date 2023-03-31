@@ -1,6 +1,6 @@
 Name:		texlive-boisik
 Version:	15878
-Release:	1
+Release:	2
 Summary:	A font inspired by Baskerville design
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/boisik
